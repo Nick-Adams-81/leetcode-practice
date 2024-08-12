@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import TwoPointers.ValidPalindrome;
 
 import java.util.Arrays;
 
@@ -13,6 +14,8 @@ public class Main {
         GroupAnagrams groupAnagrams = new GroupAnagrams();
         TopKFrequentElements frquentElements = new TopKFrequentElements();
         ProductOfArrayExceptSelf productOfArrayExceptSelf = new ProductOfArrayExceptSelf();
+        ValidPalindrome validPalindrome = new ValidPalindrome();
+
         int[] dups = {1,2,3,4};
         int[] nums = {3,4,5,6};
         String s1 = "anagram";
@@ -26,6 +29,7 @@ public class Main {
         System.out.println(groupAnagrams.groupAnagrams(groups));
         System.out.println(Arrays.toString(frquentElements.topKFrequent(elements, 2)));
         System.out.println(Arrays.toString(productOfArrayExceptSelf.product(product)));
+        System.out.println(validPalindrome.isValid("A man, a plan, a canal: Panama"));
 
 
         }
