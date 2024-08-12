@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import Stack.ValidParentheses;
 import TwoPointers.ContainerWithMostWater;
 import TwoPointers.MaxArea;
 import TwoPointers.TwoSum2;
@@ -21,6 +22,7 @@ public class Main {
         TwoSum2 twoSum2 = new TwoSum2();
         MaxArea maxArea = new MaxArea();
         ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
+        ValidParentheses validParentheses = new ValidParentheses();
 
         int[] dups = {1,2,3,4};
         int[] nums = {3,4,5,6};
@@ -44,6 +46,7 @@ public class Main {
         System.out.println(Arrays.toString(twoSum2.twoSum(newNums, 3)));
         System.out.println(maxArea.maxArea(area));
         System.out.println(containerWithMostWater.maxWater(water));
+        System.out.println(validParentheses.isValid("[]{}{"));
 
 
         }
