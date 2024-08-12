@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import TwoPointers.TwoSum2;
 import TwoPointers.ValidPalindrome;
 
 import java.util.Arrays;
@@ -15,6 +16,7 @@ public class Main {
         TopKFrequentElements frquentElements = new TopKFrequentElements();
         ProductOfArrayExceptSelf productOfArrayExceptSelf = new ProductOfArrayExceptSelf();
         ValidPalindrome validPalindrome = new ValidPalindrome();
+        TwoSum2 twoSum2 = new TwoSum2();
 
         int[] dups = {1,2,3,4};
         int[] nums = {3,4,5,6};
@@ -22,7 +24,10 @@ public class Main {
         String s2 = "nagarmm";
         int[] elements = {1,2,2,3,3,3};
         int[] product = {1,2,4,6};
+        int[] newNums = {1,2,3,4};
         String[] groups = {"hello", "olleh", "hi", "ih", "lolhe", "car", "rac", "arc"};
+
+
         System.out.println(duplicate.duplicate(dups));
         System.out.println(isAnagram.isAnagram(s1, s2));
         System.out.println(Arrays.toString(twoSums.twoSum(nums, 7)));
@@ -30,6 +35,7 @@ public class Main {
         System.out.println(Arrays.toString(frquentElements.topKFrequent(elements, 2)));
         System.out.println(Arrays.toString(productOfArrayExceptSelf.product(product)));
         System.out.println(validPalindrome.isValid("A man, a plan, a canal: Panama"));
+        System.out.println(Arrays.toString(twoSum2.twoSum(newNums, 3)));
 
 
         }
