@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import TwoPointers.ContainerWithMostWater;
 import TwoPointers.MaxArea;
 import TwoPointers.TwoSum2;
 import TwoPointers.ValidPalindrome;
@@ -19,6 +20,7 @@ public class Main {
         ValidPalindrome validPalindrome = new ValidPalindrome();
         TwoSum2 twoSum2 = new TwoSum2();
         MaxArea maxArea = new MaxArea();
+        ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
 
         int[] dups = {1,2,3,4};
         int[] nums = {3,4,5,6};
@@ -28,6 +30,7 @@ public class Main {
         int[] product = {1,2,4,6};
         int[] newNums = {1,2,3,4};
         int[] area = {1,7,2,5,4,7,3,6};
+        int[] water = {0,2,0,3,1,0,1,3,2,1};
         String[] groups = {"hello", "olleh", "hi", "ih", "lolhe", "car", "rac", "arc"};
 
 
@@ -40,6 +43,7 @@ public class Main {
         System.out.println(validPalindrome.isValid("A man, a plan, a canal: Panama"));
         System.out.println(Arrays.toString(twoSum2.twoSum(newNums, 3)));
         System.out.println(maxArea.maxArea(area));
+        System.out.println(containerWithMostWater.maxWater(water));
 
 
         }
