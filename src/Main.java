@@ -1,4 +1,5 @@
 import ArraysAndHashing.*;
+import Stack.DailyTemps;
 import Stack.GenerateParentheses;
 import Stack.ValidParentheses;
 import TwoPointers.ContainerWithMostWater;
@@ -25,6 +26,7 @@ public class Main {
         ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
         ValidParentheses validParentheses = new ValidParentheses();
         GenerateParentheses generateParentheses = new GenerateParentheses();
+        DailyTemps dailyTemps = new DailyTemps();
 
         int[] dups = {1,2,3,4};
         int[] nums = {3,4,5,6};
@@ -35,6 +37,7 @@ public class Main {
         int[] newNums = {1,2,3,4};
         int[] area = {1,7,2,5,4,7,3,6};
         int[] water = {0,2,0,3,1,0,1,3,2,1};
+        int[] temps = {30, 38, 30, 36, 35, 40, 28};
         String[] groups = {"hello", "olleh", "hi", "ih", "lolhe", "car", "rac", "arc"};
 
 
@@ -50,6 +53,7 @@ public class Main {
         System.out.println(containerWithMostWater.maxWater(water));
         System.out.println(validParentheses.isValid("[]{}{"));
         System.out.println(generateParentheses.generateParentheses(3));
+        System.out.println(Arrays.toString(dailyTemps.dailyTemps(temps)));
 
 
         }
