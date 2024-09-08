@@ -2,6 +2,7 @@ import ArraysAndHashing.*;
 import Stack.DailyTemps;
 import Stack.GenerateParentheses;
 import Stack.ValidParentheses;
+import Strings.LongestCommonPrefix;
 import Strings.RomanToInt;
 import TwoPointers.ContainerWithMostWater;
 import TwoPointers.MaxArea;
@@ -31,6 +32,7 @@ public class Main {
         GenerateParentheses generateParentheses = new GenerateParentheses();
         DailyTemps dailyTemps = new DailyTemps();
         RomanToInt romanToInt = new RomanToInt();
+        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
         RevLL ll = new RevLL(3);
         ll.append(4);
         ll.append(5);
@@ -59,6 +61,8 @@ public class Main {
         int[] water = {0,2,0,3,1,0,1,3,2,1};
         int[] temps = {30, 38, 30, 36, 35, 40, 28};
         String[] groups = {"hello", "olleh", "hi", "ih", "lolhe", "car", "rac", "arc"};
+        String[] prefix = {"dog", "racecar", "car"};
+
 
 //        System.out.println(duplicate.duplicate(dups));
 //        System.out.println(isAnagram.isAnagram(s1, s2));
@@ -75,6 +79,7 @@ public class Main {
 //        System.out.println(Arrays.toString(dailyTemps.dailyTemps(temps)));
         System.out.println(romanToInt.romanToInt("III"));
         System.out.println(romanToInt.romanToInt("IV"));
+        System.out.println(longestCommonPrefix.longestCommonPrefix(prefix));
 
 
         }
