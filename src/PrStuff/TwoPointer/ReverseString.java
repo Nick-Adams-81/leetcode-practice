@@ -2,6 +2,7 @@ package PrStuff.TwoPointer;
 
 public class ReverseString {
 
+    // This is an opposite pointer method
     public String reverse(String str) {
         char[] chars = str.toCharArray();
         int left = 0;
@@ -15,4 +16,5 @@ public class ReverseString {
         }
         return new String(chars);
     }
+
 }
