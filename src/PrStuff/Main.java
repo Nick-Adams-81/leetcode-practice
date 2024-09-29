@@ -13,6 +13,7 @@ public class Main {
         MergeTwoSortedArrays mergeTwoSortedArrays = new MergeTwoSortedArrays();
         IntersectionOfTwoArrays twoArrays = new IntersectionOfTwoArrays();
         RemoveValue removeValue = new RemoveValue();
+        TheDutchFlag theDutchFlag = new TheDutchFlag();
 
         int[] nums = {5,1,2,4,3,6,9,8,7};
         int[] nums2 = {1, 3, 6 ,8};
@@ -21,11 +22,14 @@ public class Main {
         int[] nums5 = {1,2,4,6};
         int[] nums6 = {1,2,3,4};
         int[] nums7 = {7,2,5,2,3,4,2,3,2,1};
+        int[] nums8 = {1,0,0,2,1,0,2,2};
         sortByParity.printArray(nums);
         sortByParity.sort(nums);
         sortByParity.printArray(nums);
+        theDutchFlag.sortColors(nums8);
 
         int[] result = mergeTwoSortedArrays.merge(nums3, nums4);
+        System.out.println(Arrays.toString(nums8));
         System.out.println(Arrays.toString(result));
         System.out.println(Arrays.toString(twoSum.twoSum(nums2, 11)));
         System.out.println(validPalindrome.valid("A man, a plan, a canal: Panama!"));
@@ -33,6 +37,7 @@ public class Main {
         System.out.println(Arrays.toString(twoArrays.intersection(nums5, nums6)));
         System.out.println(Arrays.toString(twoArrays.intersection2(nums5, nums6)));
         System.out.println(removeValue.removeValue(nums7, 2));
+
 
     }
 }
