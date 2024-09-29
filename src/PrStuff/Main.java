@@ -11,11 +11,14 @@ public class Main {
         SortByParity sortByParity = new SortByParity();
         TwoSum twoSum = new TwoSum();
         MergeTwoSortedArrays mergeTwoSortedArrays = new MergeTwoSortedArrays();
+        IntersectionOfTwoArrays twoArrays = new IntersectionOfTwoArrays();
 
         int[] nums = {5,1,2,4,3,6,9,8,7};
         int[] nums2 = {1, 3, 6 ,8};
         int[] nums3 = {2, 4, 6 ,8};
         int[] nums4 = {1, 3, 5, 7};
+        int[] nums5 = {1,2,4,6};
+        int[] nums6 = {1,2,3,4};
         sortByParity.printArray(nums);
         sortByParity.sort(nums);
         sortByParity.printArray(nums);
@@ -25,6 +28,8 @@ public class Main {
         System.out.println(Arrays.toString(twoSum.twoSum(nums2, 11)));
         System.out.println(validPalindrome.valid("A man, a plan, a canal: Panama!"));
         System.out.println(reverseString.reverse("hello world"));
+        System.out.println(Arrays.toString(twoArrays.intersection(nums5, nums6)));
+        System.out.println(Arrays.toString(twoArrays.intersection2(nums5, nums6)));
 
     }
 }
