@@ -1,7 +1,10 @@
 package PrStuff;
+import PrStuff.BinaryTree.DFSPreOrder;
+import PrStuff.BinaryTree.TreeNode;
 import PrStuff.TwoPointer.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +17,16 @@ public class Main {
         IntersectionOfTwoArrays twoArrays = new IntersectionOfTwoArrays();
         RemoveValue removeValue = new RemoveValue();
         TheDutchFlag theDutchFlag = new TheDutchFlag();
+        DFSPreOrder dfsPreOrder = new DFSPreOrder();
 
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+
+        List<Integer> result = dfsPreOrder.preOrder(root);
+        System.out.println(Arrays.toString(result.toArray()));
         int[] nums = {5,1,2,4,3,6,9,8,7};
         int[] nums2 = {1, 3, 6 ,8};
         int[] nums3 = {2, 4, 6 ,8};
@@ -28,15 +40,15 @@ public class Main {
         sortByParity.printArray(nums);
         theDutchFlag.sortColors(nums8);
 
-        int[] result = mergeTwoSortedArrays.merge(nums3, nums4);
-        System.out.println(Arrays.toString(nums8));
-        System.out.println(Arrays.toString(result));
-        System.out.println(Arrays.toString(twoSum.twoSum(nums2, 11)));
-        System.out.println(validPalindrome.valid("A man, a plan, a canal: Panama!"));
-        System.out.println(reverseString.reverse("hello world"));
-        System.out.println(Arrays.toString(twoArrays.intersection(nums5, nums6)));
-        System.out.println(Arrays.toString(twoArrays.intersection2(nums5, nums6)));
-        System.out.println(removeValue.removeValue(nums7, 2));
+//        int[] result = mergeTwoSortedArrays.merge(nums3, nums4);
+//        System.out.println(Arrays.toString(nums8));
+//        System.out.println(Arrays.toString(result));
+//        System.out.println(Arrays.toString(twoSum.twoSum(nums2, 11)));
+//        System.out.println(validPalindrome.valid("A man, a plan, a canal: Panama!"));
+//        System.out.println(reverseString.reverse("hello world"));
+//        System.out.println(Arrays.toString(twoArrays.intersection(nums5, nums6)));
+//        System.out.println(Arrays.toString(twoArrays.intersection2(nums5, nums6)));
+//        System.out.println(removeValue.removeValue(nums7, 2));
 
 
     }
