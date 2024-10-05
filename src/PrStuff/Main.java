@@ -1,4 +1,5 @@
 package PrStuff;
+import PrStuff.Arrays.SumSwap;
 import PrStuff.BinaryTree.DFSPreOrder;
 import PrStuff.BinaryTree.TreeNode;
 import PrStuff.TwoPointer.*;
@@ -18,6 +19,7 @@ public class Main {
         RemoveValue removeValue = new RemoveValue();
         TheDutchFlag theDutchFlag = new TheDutchFlag();
         DFSPreOrder dfsPreOrder = new DFSPreOrder();
+        SumSwap sumSwap = new SumSwap();
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -35,10 +37,15 @@ public class Main {
         int[] nums6 = {1,2,3,4};
         int[] nums7 = {7,2,5,2,3,4,2,3,2,1};
         int[] nums8 = {1,0,0,2,1,0,2,2};
+        int[] nums9 = {4,1,2};
+        int[] nums10 = {3,5,2};
+        int[] res = sumSwap.sumSwap(nums9, nums10);
         sortByParity.printArray(nums);
         sortByParity.sort(nums);
         sortByParity.printArray(nums);
         theDutchFlag.sortColors(nums8);
+        if(res.length == 0) System.out.println("No Swap available");
+        else System.out.println("Swap " + res[0] + " with " + res[1]);
 
 //        int[] result = mergeTwoSortedArrays.merge(nums3, nums4);
 //        System.out.println(Arrays.toString(nums8));

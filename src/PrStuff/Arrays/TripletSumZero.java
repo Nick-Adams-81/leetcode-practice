@@ -26,7 +26,6 @@ public class TripletSumZero {
                 } else {
                     right--;
                 }
-
             }
         }
         return triplets;
