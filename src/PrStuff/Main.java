@@ -1,5 +1,6 @@
 package PrStuff;
 import PrStuff.Arrays.SumSwap;
+import PrStuff.Arrays.TripletSumZero;
 import PrStuff.BinaryTree.DFSPreOrder;
 import PrStuff.BinaryTree.TreeNode;
 import PrStuff.TwoPointer.*;
@@ -20,6 +21,7 @@ public class Main {
         TheDutchFlag theDutchFlag = new TheDutchFlag();
         DFSPreOrder dfsPreOrder = new DFSPreOrder();
         SumSwap sumSwap = new SumSwap();
+        TripletSumZero tripletSumZero = new TripletSumZero();
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -28,24 +30,24 @@ public class Main {
         root.left.right = new TreeNode(5);
 
         List<Integer> result = dfsPreOrder.preOrder(root);
-        System.out.println(Arrays.toString(result.toArray()));
-        int[] nums = {5,1,2,4,3,6,9,8,7};
-        int[] nums2 = {1, 3, 6 ,8};
-        int[] nums3 = {2, 4, 6 ,8};
-        int[] nums4 = {1, 3, 5, 7};
-        int[] nums5 = {1,2,4,6};
-        int[] nums6 = {1,2,3,4};
-        int[] nums7 = {7,2,5,2,3,4,2,3,2,1};
-        int[] nums8 = {1,0,0,2,1,0,2,2};
-        int[] nums9 = {4,1,2};
-        int[] nums10 = {3,5,2};
-        int[] res = sumSwap.sumSwap(nums9, nums10);
-        sortByParity.printArray(nums);
-        sortByParity.sort(nums);
-        sortByParity.printArray(nums);
-        theDutchFlag.sortColors(nums8);
-        if(res.length == 0) System.out.println("No Swap available");
-        else System.out.println("Swap " + res[0] + " with " + res[1]);
+//        System.out.println(Arrays.toString(result.toArray()));
+//        int[] nums = {5,1,2,4,3,6,9,8,7};
+//        int[] nums2 = {1, 3, 6 ,8};
+//        int[] nums3 = {2, 4, 6 ,8};
+//        int[] nums4 = {1, 3, 5, 7};
+//        int[] nums5 = {1,2,4,6};
+//        int[] nums6 = {1,2,3,4};
+//        int[] nums7 = {7,2,5,2,3,4,2,3,2,1};
+//        int[] nums8 = {1,0,0,2,1,0,2,2};
+//        int[] nums9 = {4,1,2};
+//        int[] nums10 = {3,5,2};
+//        int[] res = sumSwap.sumSwap(nums9, nums10);
+//        sortByParity.printArray(nums);
+//        sortByParity.sort(nums);
+//        sortByParity.printArray(nums);
+//        theDutchFlag.sortColors(nums8);
+//        if(res.length == 0) System.out.println("No Swap available");
+//        else System.out.println("Swap " + res[0] + " with " + res[1]);
 
 //        int[] result = mergeTwoSortedArrays.merge(nums3, nums4);
 //        System.out.println(Arrays.toString(nums8));
@@ -56,6 +58,10 @@ public class Main {
 //        System.out.println(Arrays.toString(twoArrays.intersection(nums5, nums6)));
 //        System.out.println(Arrays.toString(twoArrays.intersection2(nums5, nums6)));
 //        System.out.println(removeValue.removeValue(nums7, 2));
+        int[] triplets = {1,3,2,-3,0,-1};
+        System.out.println(tripletSumZero.findTriplets(triplets));
+        System.out.println(tripletSumZero.findTriplets2(triplets));
+        System.out.println(tripletSumZero.findTriplets3(triplets));
 
 
     }
